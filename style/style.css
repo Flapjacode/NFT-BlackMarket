@@ -1,100 +1,152 @@
+/* General Styles */
 body {
-    font-family: 'Neuton', serif;
-    background-color: #209d50;
-    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e3d2f; /* Dark cannabis green */
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-
+/* Header */
 header {
-    background: white;
-    color: black;
-    font-family: 'Neuton';
-    font-size: 24px;
+    background: #2e5537;
+    color: #e4ffe3;
+    font-size: 36px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    padding: 20px 40px;
-    height: 350px;
-    gap: 40px; /* spacing between logo and text */
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .logo {
-    width: 200px;
+    width: 160px;
     height: auto;
-    position: static; /* <- remove absolute so it flows naturally */
 }
 
 .header-text {
     flex-grow: 1;
 }
 
-
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 15px;
+    gap: 30px;
+    background-color: #3a6146;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 nav a {
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #1db954;
+    color: #80ff9f;
 }
 
+/* Sections */
 .container {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
-.form-container {
-    background: #222;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+.section {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
+    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.text-content h2, .text-content h3, .text-content h4 {
+    color: #baffc1;
+    margin-top: 0;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+.form-container {
+    background: #2b4231;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 input, textarea {
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 16px;
-    flex: 1 1 auto;
-    min-width: 200px;
+    width: 100%;
+    max-width: 400px;
 }
 
 button {
-    padding: 10px 20px;
-    background: #1db954;
-    color: white;
+    padding: 12px 25px;
+    background: #38e273;
+    color: #000;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
 }
 
+button:hover {
+    background: #2ad161;
+}
+
+/* Call to Action Buttons */
+.cta a {
+    display: inline-block;
+    background-color: #38e273;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #2ad161;
+}
+
+/* Footer */
 footer {
     padding: 20px;
-    background: #e1dfd9;
+    background: #314d39;
     text-align: center;
+    color: #cccccc;
+    font-size: 14px;
 }
