@@ -13,22 +13,23 @@ body {
 /* Header */
 header {  
     flex-shrink: 0;
-    background: #2e5537;
-    color: #e4ffe3;
-    font-size: 36px;
-    font-weight: bold;
+    background: #ffffff; /* White background */
+    color: #1e3d2f; /* Dark text for contrast */
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 40px;
-    gap: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 20px 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Logo inside header */
 .logo {
-    width: 160px;
+    width: 200px; /* Adjust size as needed */
     height: auto;
+    align-items: left;
+    justify-content: flex-start;
 }
+
 
 .header-text {
     flex-grow: 1;
