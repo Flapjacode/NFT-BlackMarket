@@ -11,7 +11,9 @@ body {
 }
 
 /* Header */
-header {
+header {  
+    position: relative;
+    z-index: 2;
     background: #2e5537;
     color: #e4ffe3;
     font-size: 36px;
@@ -35,6 +37,8 @@ header {
 
 /* Navigation */
 nav {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -59,6 +63,7 @@ nav a:hover {
 
 /* Sections */
 .container {
+    margin-top: 20px; /* space below navbar */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
