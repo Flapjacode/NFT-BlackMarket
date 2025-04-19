@@ -14,7 +14,7 @@ body {
 header {  
     flex-shrink: 0;
     background: #ffffff; /* White background */
-    color: #1e3d2f; /* Dark text for contrast */
+    color: #ffffff; /* Dark text for contrast */
     display: flex;
     align-items: center;
     justify-content: flex-start;
