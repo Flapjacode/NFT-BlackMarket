@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #1e3d2f; /* Dark cannabis green */
+    background-color: #1e3d2f;
     color: #f5f5f5;
     margin: 0;
     padding: 0;
@@ -11,10 +11,9 @@ body {
 }
 
 /* Header */
-header {  
-    flex-shrink: 0;
-    background: #ffffff; /* White background */
-    color: #ffffff; /* Dark text for contrast */
+header {
+    background: #ffffff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -22,24 +21,19 @@ header {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Logo inside header */
 .logo {
-    width: 200px; /* Adjust size as needed */
+    width: 200px;
     height: auto;
-    align-items: left;
-    justify-content: flex-start;
-}
-
-
-.header-text {
-    flex-grow: 1;
 }
 
 /* Navigation */
 nav {
-      flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     background-color: #3a6146;
     padding: 15px 0;
@@ -62,7 +56,7 @@ nav a:hover {
 
 /* Sections */
 .container {
-    margin-top: 50px; /* space below navbar */
+    margin-top: 50px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -129,7 +123,7 @@ button:hover {
     background: #2ad161;
 }
 
-/* Call to Action Buttons */
+/* CTA Buttons */
 .cta a {
     display: inline-block;
     background-color: #38e273;
@@ -153,4 +147,40 @@ footer {
     text-align: center;
     color: #cccccc;
     font-size: 14px;
+}
+
+/* ===================== */
+/* MOBILE RESPONSIVENESS */
+/* ===================== */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    input, textarea {
+        max-width: 100%;
+    }
 }
