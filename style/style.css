@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: sans-serif;
-    color: #ffffff;
+    color: #2a9210;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,7 +12,7 @@ body {
 /* Header */
 header {
     background: #ffffff;
-    color: #ffffff;
+    color: #0a5e0a;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -55,7 +55,8 @@ nav a:hover {
 
 /* Sections */
 .headerlogo {
-    color: #ffffff;
+    color: #000000;
+    background: #ffffff;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -65,6 +66,7 @@ nav a:hover {
 
 .container {
     color: #20c52e;
+    background: #b075f3;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
