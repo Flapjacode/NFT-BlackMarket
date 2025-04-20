@@ -54,8 +54,17 @@ nav a:hover {
 }
 
 /* Sections */
-.container {
+.headerlogo {
     color: #ffffff;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.container {
+    color: #20c52e;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
