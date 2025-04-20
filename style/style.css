@@ -23,6 +23,7 @@ header {
 .logo {
     width: 200px;
     height: auto;
+    align-items: left;
 }
 
 /* Navigation */
@@ -65,8 +66,8 @@ nav a:hover {
 }
 
 .container {
-    color: #20c52e;
-    background: #b075f3;
+    color: #000000;
+    background: #1cad09;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
