@@ -151,14 +151,6 @@ button:hover {
     background-color: #2ad161;
 }
 
-
-.image-grid a img {
-  width: 200px;
-  height: auto;
-  display: block;
-}
-
-
 /* Footer */
 footer {
     padding: 20px;
@@ -202,15 +194,4 @@ footer {
     input, textarea {
         max-width: 100%;
     }
-
-    button {
-        width: 100%;
-    }
-    .cta a {
-        width: 100%;
-        text-align: center;
-    }
-
-
-
 }
