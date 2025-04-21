@@ -203,17 +203,14 @@ footer {
         max-width: 100%;
     }
 
-    .image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
+    button {
+        width: 100%;
+    }
+    .cta a {
+        width: 100%;
+        text-align: center;
+    }
 
-.image-grid a img {
-  width: 200px;
-  height: auto;
-  display: block;
-}
+
 
 }
