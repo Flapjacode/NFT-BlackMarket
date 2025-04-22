@@ -79,7 +79,7 @@ nav a:hover {
     width: 100%;
     max-width: 1200px;
     margin-bottom: 60px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #1cad09;
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
